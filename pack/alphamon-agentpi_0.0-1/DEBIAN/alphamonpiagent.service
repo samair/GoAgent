@@ -1,0 +1,9 @@
+[Unit]
+Description=ALPHAMONPIAGENT
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/http-client
+
+[Install]
+WantedBy=multi-user.target
