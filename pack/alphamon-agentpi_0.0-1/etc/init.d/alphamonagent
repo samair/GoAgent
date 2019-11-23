@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 # Version 0.5 October 26, 2016
 ### BEGIN INIT INFO
 # Provides:          alphamonagent
@@ -16,6 +17,14 @@
 start() {
     # code to start app comes here
     nohup http-client > /tmp/alphamonagent.log 2>&1 &
+=======
+# Source function library.
+
+
+start() {
+    # code to start app comes here
+    echo "hello alphamonagent here" 
+>>>>>>> f5b48c7fbfede2975e24edeb41bec53e6c92e44f
 }
 
 stop() {
