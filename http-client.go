@@ -58,7 +58,7 @@ type Config struct {
 			Key		 string `yaml:"key"`
 		} `yaml:"server"`
 	}
-	f, err := os.Open("server_config.yml")
+	f, err := os.Open("/etc/alphamon/server_config.yml")
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -92,8 +92,10 @@ type Config struct {
 	req.Header.Add("Key", cfg.Server.Key)
 	req.Header.Add("Content-Type","Application/json")
 	resp, err := client.Do(req)
+	if err ==nil {
+	
 	defer resp.Body.Close()
-
+	}
 
 }
 
@@ -106,7 +108,7 @@ func MakeRequest() {
 			DeviceId string `yaml:"serial"`
 		} `yaml:"server"`
 	}
-	f, err := os.Open("server_config.yml")
+	f, err := os.Open("/etc/alphamon/server_config.yml")
 	if err != nil {
 		log.Fatalln(err)
 	}

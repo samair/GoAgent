@@ -1,11 +1,30 @@
 #!/bin/bash
 
+<<<<<<< HEAD
+# Version 0.5 October 26, 2016
+### BEGIN INIT INFO
+# Provides:          alphamonagent
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Required-Start:    $network $named $portmap $syslog $remote_fs
+# Required-Stop:     $remote_fs $syslog 
+# Short-Description: Alphamon Pi Agent
+#
+### END INIT INFO
+
+# Author: Sameer Chandra <tsameerc@gmail.com>
+#
+start() {
+    # code to start app comes here
+    nohup http-client > /tmp/alphamonagent.log 2>&1 &
+=======
 # Source function library.
 
 
 start() {
     # code to start app comes here
     echo "hello alphamonagent here" 
+>>>>>>> f5b48c7fbfede2975e24edeb41bec53e6c92e44f
 }
 
 stop() {
