@@ -18,15 +18,6 @@ start() {
     # code to start app comes here
     nohup http-client > /tmp/alphamonagent.log 2>&1 &
 
-# Source function library.
-
-
-start() {
-    # code to start app comes here
-    echo "hello alphamonagent here" 
-
-}
-
 stop() {
     # code to stop app comes here 
       echo "hello alphamonagent here" 
