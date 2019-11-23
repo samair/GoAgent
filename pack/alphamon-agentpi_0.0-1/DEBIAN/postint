@@ -1,0 +1,8 @@
+#!/bin/sh
+# POSTINST script for intera
+
+echo "\033[36m HI I'M A POSTINST SCRIPT `date +"%s"` \033[39m"
+
+systemd enable alphamonagent
+systemd start alphamonagent
+exit 0

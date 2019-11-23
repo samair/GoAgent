@@ -1,5 +1,5 @@
 # Server configurations
 server:
-  host: "http://localhost:8080"
+  host: "https://webvidhi-pubsub.herokuapp.com"
   key: "QT764tnWIFtPvXzqFROLZBxm9Im2Tq"
   port: 8080
