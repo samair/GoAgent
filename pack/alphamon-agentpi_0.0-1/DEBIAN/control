@@ -4,5 +4,4 @@ Section: base
 Priority: optional
 Architecture: armhf
 Maintainer: Sameer <tsameerc@gmail.com>
-Description: Agent to support
- device discovery and reporting of AlphaMon
+Description: Agent to support device discovery and reporting of AlphaMon
