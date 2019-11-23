@@ -1,4 +1,4 @@
-Package: AlphaMon-Rpi-Agent
+Package: alphamonagent
 Version: 0.0-1
 Section: base
 Priority: optional
