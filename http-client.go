@@ -22,7 +22,7 @@ import (
 func main() {
 	//var wg sync.WaitGroup˜
 	//MakeRequest()
-
+	fmt.Println(Stats.GetMachineId())
 	epochRequest()
 	go MakeServer()
 	ticker := time.NewTicker(10 * time.Second)

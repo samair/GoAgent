@@ -3,6 +3,7 @@ package Stats
 import (
 	"fmt"
 
+	"github.com/denisbrodbeck/machineid"
 	"github.com/shirou/gopsutil/disk"
 	"github.com/shirou/gopsutil/host"
 )
@@ -36,4 +37,14 @@ func GetHostName() string {
 
 	fmt.Printf(devInfo.Hostname)
 	return devInfo.Hostname
+}
+
+func GetMachineId() string {
+	machineID := "NONAME"
+	hashedID, err := machineid.ProtectedID("myAppName")
+	if err == nil {
+		machineID = hashedID
+	}
+
+	return machineID
 }
